@@ -92,15 +92,16 @@ def generate():
         expire_ticks = date_to_ticks(user['expire'])
         permanent_ticks = date_to_ticks("2099-12-31")
         
+        # SWPE expects ID at index 1 or 2
         fields = [
-            encrypt_ag_a(user['type'], PWD3),
-            encrypt_ag_a("1", PWD3),
-            encrypt_ag_a("_skip_", PWD3),
-            encrypt_ag_a(str(user['id']), PWD3),
-            encrypt_ag_a(user['name'], PWD3),
-            encrypt_ag_a(str(expire_ticks), PWD3),
-            encrypt_ag_a(settings['default_permission'], PWD3),
-            encrypt_ag_a(f"114615={permanent_ticks},225783={expire_ticks}", PWD3),
+            encrypt_ag_a(user['type'], PWD3), # 0: Type
+            encrypt_ag_a(str(user['id']), PWD3), # 1: ID (MATCH THIS!)
+            encrypt_ag_a(user['name'], PWD3), # 2: Name
+            encrypt_ag_a("_skip_", PWD3),     # 3: Skip
+            encrypt_ag_a("_skip_", PWD3),     # 4: Skip
+            encrypt_ag_a(str(expire_ticks), PWD3), # 5: Expire
+            encrypt_ag_a(settings['default_permission'], PWD3), # 6: Permission
+            encrypt_ag_a(f"114615={permanent_ticks},225783={expire_ticks}", PWD3), # 7: VIP
         ]
         lines.append(",".join(fields))
     
