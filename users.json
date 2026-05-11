@@ -1,0 +1,64 @@
+{
+    "settings": {
+        "header_field_0": "opMK2qIciADtCiph3ehNE5LHTVn7Zi96qcC/O2cAWJYNz9HMQl+Kx",
+        "default_permission": "100",
+        "key_114615_expire": "2099-12-31",
+        "key_225783_expire": "2099-12-31"
+    },
+    "users": [
+        {
+            "name": "yying",
+            "type": "New::136",
+            "id": 375132,
+            "expire": "2027-04-22"
+        },
+        {
+            "name": "猛將",
+            "type": "New::137",
+            "id": 10104,
+            "expire": "2008-01-01"
+        },
+        {
+            "name": "豪傑",
+            "type": "New::137",
+            "id": 10102,
+            "expire": "2008-01-01"
+        },
+        {
+            "name": "寶怪AsA",
+            "type": "New::137",
+            "id": 416057,
+            "expire": "2026-10-13"
+        },
+        {
+            "name": "寶怪Rora",
+            "type": "New::137",
+            "id": 416056,
+            "expire": "2026-11-05"
+        },
+        {
+            "name": "寶怪Ahyeon",
+            "type": "New::137",
+            "id": 416715,
+            "expire": "2026-11-05"
+        },
+        {
+            "name": "寶怪Pharita",
+            "type": "New::137",
+            "id": 416059,
+            "expire": "2026-11-05"
+        },
+        {
+            "name": "寶怪Ruka",
+            "type": "New::137",
+            "id": 416060,
+            "expire": "2026-11-05"
+        },
+        {
+            "name": "虎哈哈哈",
+            "type": "New::138 (W)",
+            "id": 132761,
+            "expire": "2027-04-25"
+        }
+    ]
+}
